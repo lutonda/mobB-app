@@ -1,7 +1,8 @@
-import Repository from  './Repository'
+import Repository from './Repository';
+import IRepository from './IRepository';
 import Currency from  '../entities/Currency'
 
-class CurrencyRepository extends Repository implements RepositoryInterface<Currency>{
+class CurrencyRepository extends Repository implements IRepository<Currency>{
 
 
   private identity:string='currency'

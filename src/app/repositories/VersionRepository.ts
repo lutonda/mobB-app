@@ -1,8 +1,8 @@
-import Repository from  './Repository'
+import Repository from  './Repository';
+import IRepository from  './IRepository';
 import Version from  '../entities/Version'
 
-class VersionRepository extends Repository implements RepositoryInterface<Version>{
-
+class VersionRepository extends Repository implements IRepository<Version>{
 
   private identity:string='version'
 
@@ -17,8 +17,7 @@ class VersionRepository extends Repository implements RepositoryInterface<Versio
   getOne(id:number):Version{
     return this.One(id);
   }
-  
-}
 
+}
 
 export default VersionRepository
