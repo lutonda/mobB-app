@@ -13,6 +13,14 @@ class Repository{
     All(){
       return this.storage;
     }
+
+    _One(id:number):any{
+      return ;
+    }
+    _All():Array<any>{
+      return ;
+    }
+
 }
 
 export default Repository;
